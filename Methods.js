@@ -71,15 +71,24 @@ function work(){
 }
 
 function buyComputer(){
-    if(myBank.balance > currentComputer.price){
+        updateFields();
+    if(myBank.balance >= currentComputer.price){
         myBank.balance -= currentComputer.price;
+        updateFields();
+        document.getElementById('computerBought').style.visibility = 'visible';
+    }else{
+        document.getElementById('notEnoughMoney').style.visibility = 'visible';
     }
+
 }
 
 function updateFields(){
     document.getElementById('loanBalanceFinder').textContent = myBank.loan;
     document.getElementById('payBalanceFinder').textContent = myBank.pay;
     document.getElementById('balanceFinder').textContent = myBank.balance;
+    document.getElementById('computerBought').style.visibility = 'hidden';
+    document.getElementById('notEnoughMoney').style.visibility = 'hidden';
+
 }
 
 function updateVisibility(){
@@ -106,8 +115,8 @@ function payAllLoan(){
 function getPayCheck(){
 
     if(myBank.loan < (myBank.pay/10)){
-        myBank.loan = 0;
         myBank.balance += (myBank.pay - myBank.loan);
+        myBank.loan = 0;
         myBank.pay = 0;
         document.getElementById('loanTooHigh').style.visibility = 'hidden';
 
@@ -129,6 +138,7 @@ function getLoan(){
 
     if(myBank.loan == 0 && newLoan <= (myBank.balance*2)){
     myBank.loan = parseInt(newLoan);
+    myBank.balance += parseInt(newLoan);
     document.getElementById('loanTooHigh').style.visibility = 'hidden';
     }else{
         document.getElementById('loanTooHigh').style.visibility = 'visible';
@@ -143,6 +153,9 @@ function getLoan(){
 document.getElementById('balanceFinder').textContent = myBank.balance;
 document.getElementById('loanBalanceFinder').textContent = myBank.loan;
 document.getElementById('loanTooHigh').style.visibility = 'hidden';
+document.getElementById('notEnoughMoney').style.visibility = 'hidden';
+document.getElementById('computerBought').style.visibility = 'hidden';
+
 
 
 updateFields();
