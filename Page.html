@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="PageStyle.css">
+</head>
+    <body>
+        <div class="headDiv">
+            <h1 class="overHead">Komputer Store</h1>
+        </div>
+        <div class="topBoxDiv">
+
+            <div class="bankDiv">
+                <h1 class="bankHead">Bank</h1>
+                <div class="bankInfo">
+                    <div class="balanceCounter">
+                        <p>Balance: </p>
+                        <p class="balanceFinderCount" id="balanceFinder"></p>
+                    </div>
+                    <div class="balanceCounter" id="hasLoan">
+                        <p>Loan balance: </p>
+                        <p class="loanBalanceFinderCount" id="loanBalanceFinder"></p>
+                    </div>
+                </div>
+                
+                <div class="getLoan">
+                    <p class="loanWarning" id="loanTooHigh">Your balance is too low for that loan or you already have a loan</p>
+                    <input style="width: 92px;" type="text" placeholder="Enter amount" id="loanAmount"><br>
+                    <button class="buttonGetLoan" onclick="getLoan()">Get loan</button>
+                </div>
+            
+            </div>
+
+            <div class="workDiv">
+                <h1 class="bankHead">Work</h1>
+                <div class="bankInfo">
+                    <div class="workPay">
+                        <p>Pay </p>
+                        <p id="payBalanceFinder" class="payOutPut"></p>
+                    </div>
+                </div>
+                <button id="payLoanDown" class="payLoanDown" onclick="payAllLoan()">Pay all loan</button>
+                <div class="workButtons">
+                    <button class="buttonWorkBank" onclick="getPayCheck()">Bank</button>
+                    <button class="buttonWork" onclick="work()">Work</button>
+                </div>
+            
+            </div>
+
+            <div class="laptopDiv">
+                <h1 class="bankHead">Laptops</h1>
+                <div class="bankInfo">
+                    <select name="computers" id="computers"></select>
+                    <p id="chosenComputer"></p>
+                </div>
+                
+                <div class="getLoan">
+                </div>
+            
+            </div>
+        
+        </div>
+        <div class="computerBox">
+            <img id="computerImg" alt="No image found" class="computerPick">
+
+            <div class="priceDiv">
+                <p id="computerName"></p>
+                <p id="computerDescription"></p>
+            </div>
+
+            <div class="priceDiv">
+                <p id ="computerPrice"></p>
+                <button onclick="buyComputer()">Buy now</button>
+            </div>
+        </div>
+
+    </body>
+
+<script src="Methods.js"></script>
+<script src="https://noroff-komputer-store-api.herokuapp.com/computers"></script>
+
+</html>
+

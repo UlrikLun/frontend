@@ -1,0 +1,131 @@
+.headDiv{
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+.overHead{
+    margin-left: 10%;
+}
+.bankDiv{
+    border-radius: 18px;
+    height: 300px;
+    width: 250px;
+    background-color: rgb(203, 229, 252);
+}
+
+.workDiv{
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    background-color: rgb(203, 229, 252);
+}
+
+.laptopDiv{
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    background-color: rgb(203, 229, 252);
+
+}
+
+.bankHead{
+    text-align: center;
+    margin-top: 0;
+}
+
+.bankInfo{
+    margin-left: 10px;
+}
+
+.buttonGetLoan{
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(72, 202, 126);
+}
+
+.buttonWork{
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 89, 255, 0.699);
+}
+.buttonWorkBank{
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(191, 194, 26, 0.644);
+}
+
+.getLoan{
+    margin-top: 28px;
+    text-align: center;
+
+}
+
+.topBoxDiv{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.workButtons{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.balanceCounter{
+    display: flex;
+}
+.balanceFinderCount{
+    margin-left: 100px;
+}
+.loanBalanceFinderCount{
+    margin-left: 67px;
+}
+.workPay{
+    display: flex;
+}
+.payOutPut{
+    margin-left: 150px;
+}
+.payLoanDown{
+    margin-left: 75px;
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(72, 202, 126);
+}
+.computerBox{
+    background-color: rgb(203, 229, 252);
+    height: 300px;
+    border-radius: 15px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+.computerPick{
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 52px;
+}
+.priceDiv{
+    text-align: center;
+    margin-top: 100px;
+    
+}
