@@ -8,7 +8,6 @@
             <h1 class="overHead">Komputer Store</h1>
         </div>
         <div class="topBoxDiv">
-
             <div class="bankDiv">
                 <h1 class="bankHead">Bank</h1>
                 <div class="bankInfo">
@@ -21,15 +20,11 @@
                         <p class="loanBalanceFinderCount" id="loanBalanceFinder"></p>
                     </div>
                 </div>
-                
                 <div class="getLoan">
                     <p class="loanWarning" id="loanTooHigh">Your balance is too low for that loan or you already have a loan</p>
-                    <input style="width: 92px;" type="text" placeholder="Enter amount" id="loanAmount"><br>
                     <button class="buttonGetLoan" onclick="getLoan()">Get loan</button>
                 </div>
-            
             </div>
-
             <div class="workDiv">
                 <h1 class="bankHead">Work</h1>
                 <div class="bankInfo">
@@ -43,38 +38,30 @@
                     <button class="buttonWorkBank" onclick="getPayCheck()">Bank</button>
                     <button class="buttonWork" onclick="work()">Work</button>
                 </div>
-            
             </div>
-
             <div class="laptopDiv">
                 <h1 class="bankHead">Laptops</h1>
                 <div class="bankInfo">
                     <select name="computers" id="computers"></select>
                     <p id="chosenComputer"></p>
                 </div>
-                
                 <div class="getLoan">
                 </div>
-            
             </div>
-        
         </div>
         <div class="computerBox">
             <img id="computerImg" alt="No image found" class="computerPick">
-
             <div class="priceDiv">
                 <p id="computerName"></p>
                 <p id="computerDescription"></p>
                 <p id="notEnoughMoney" style="color: red;">You do not have enough money to but this computer</p>
                 <p id="computerBought" style="color: green;">You successfylly bought the computer</p>
             </div>
-
             <div class="priceDiv">
                 <p id ="computerPrice"></p>
-                <button onclick="buyComputer()">Buy now</button>
+                <button class="buyNowButton" onclick="buyComputer()">Buy now</button>
             </div>
         </div>
-
     </body>
 
 <script src="Methods.js"></script>

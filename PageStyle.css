@@ -67,7 +67,7 @@
 }
 
 .getLoan{
-    margin-top: 28px;
+    margin-top: 48px;
     text-align: center;
 
 }
@@ -127,5 +127,13 @@
 .priceDiv{
     text-align: center;
     margin-top: 100px;
-    
+}
+.buyNowButton{
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(72, 202, 126);
 }
